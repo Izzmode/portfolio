@@ -1,0 +1,46 @@
+.Hero {
+  .greeting-wrapper {
+    z-index: 1;
+    background-color: #1c1c1c71;
+    border-radius: 8px;
+  }
+
+  .avatar-image {
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    filter: saturate(60%) brightness(110%);
+  }
+
+  .hover-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    text-align: center;
+    background-color: rgba(36, 36, 36, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .avatar-image-container:hover .hover-box {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Hero {
+    .greeting-wrapper {
+      background-color: inherit;
+    }
+
+    .avatar-image {
+      height: 450px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.About {
+  background: linear-gradient(to bottom, rgb(33, 33, 33), rgb(37, 37, 37));
+  scroll-margin-top: 5rem;
+
+  .icon-wrapper {
+    position: relative;
+
+    .icon-text {
+      position: absolute;
+      bottom: -1.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgb(33, 33, 33);
+      padding: 0.1rem 0.3rem;
+      border-radius: 0.2rem;
+      display: none;
+      color: #f0f0f0;
+      opacity: 0.8;
+      font-size: 0.8rem;
+    }
+
+    &:hover {
+      .icon-text {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.Contact {
+  scroll-margin-top: 10rem;
+
+  .card-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(36, 36, 36), rgb(37, 37, 37));
+    height: 12.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 7px 7px 15px rgb(28, 28, 28);
+    width: 100%;
+  }
+
+  .card-contact:hover {
+    opacity: 0.9;
+  }
+
+  .icon {
+    margin-right: 0rem;
+    margin-bottom: 0.8rem;
+  }
+}

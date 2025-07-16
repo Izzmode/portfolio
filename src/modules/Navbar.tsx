@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import "./navbar.css";
 
-const Navbar = () => {
-  const [activeLink, setActiveLink] = useState<string>("home");
+export default function Navbar() {
+  const [activeLink, setActiveLink] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const isProgrammaticScroll = useRef(false);
 
@@ -66,7 +66,7 @@ const Navbar = () => {
       <header className="header-wrapper">
         <div className="logo">. io</div>
         <div
-          className={`menu-toggle ${menuOpen ? "open" : ""}`}
+          className={`menu-toggle ${menuOpen && "open"}`}
           onClick={handleToggleMenu}
         >
           <div className="bar"></div>
@@ -101,11 +101,6 @@ const Navbar = () => {
               CV
             </a>
           </li>
-          {/* <li>
-            <a href="#projects" className={activeLink === 'projects' ? 'active' : ''} onClick={() => handleLinkClick('projects')}>
-              Projects
-            </a>
-          </li> */}
           <li>
             <a
               href="#contact"
@@ -119,6 +114,4 @@ const Navbar = () => {
       </header>
     </section>
   );
-};
-
-export default Navbar;
+}

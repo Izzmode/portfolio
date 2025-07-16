@@ -10,9 +10,6 @@ export default function Hero() {
       id="home"
     >
       <div className="avatar-image-container relative">
-        {/* <h2 className="absolute text-[9rem] text-center text-gray-200 opacity-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none z-0">
-          IZABELLE OLOFSSON
-        </h2>{" "} */}
         <h2
           className="text-gray-400 opacity-30 text-xs tracking-widest text-center mb-2 lg:hidden"
           aria-label="Izabelle Olofsson"
@@ -48,14 +45,14 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="text-[3rem] lg:text-[2rem] text-icon" />
+            <FaLinkedin className="text-[3rem] lg:text-[2rem] text-icon hover:scale-105 hover:text-[#cd6f98] transition-transform duration-200" />
           </a>
           <a
             href="https://github.com/Izzmode"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="text-[3rem] lg:text-[2rem] text-icon" />
+            <FaGithub className="text-[3rem] lg:text-[2rem] text-icon hover:scale-105 hover:text-[#cd6f98] transition-transform duration-200" />
           </a>
         </div>
       </div>

@@ -5,8 +5,8 @@ import "./contact.css";
 export default function Contact() {
   return (
     <section className="Contact mt-[4rem] pb-8 w-full" id="contact">
-      <div className="title-wrapper heading-contact">
-        <h2 className="title heading-contact">
+      <div className="mb-8 md:mb-12 text-[1.5rem] md:text-[2rem]">
+        <h2 className="text-center">
           Let's get in <span className="text-accent">touch</span>!
         </h2>
       </div>

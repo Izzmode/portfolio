@@ -1,7 +1,7 @@
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import "./footer.css";
 
-const footer = () => {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -24,6 +24,4 @@ const footer = () => {
       </div>
     </div>
   );
-};
-
-export default footer;
+}
